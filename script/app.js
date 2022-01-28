@@ -110,6 +110,15 @@ music.addEventListener("timeupdate",(e)=>{
         
 });
 //---//
+//on--end--of--song//music.addEventListener("ended", ()=>{
+    muiscIndex ++ ;
+    muiscIndex > allSongs.length ? muiscIndex = 0 : muiscIndex = muiscIndex;
+    onload(muiscIndex);
+    playsong();
+
+
+});
+
 
 
 //function for list and about //
