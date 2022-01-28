@@ -41,7 +41,7 @@
     
 }
 @media screen and (max-width: 667px) {
-    body {
+     body {
         overflow-x: hidden !important;
     }
     .progress{left: 15%;}
@@ -49,10 +49,12 @@
     .player{max-width: 100%;}
     #prev{font-size: 30px;}#play{font-size: 40px;}#next{font-size: 30px;}
     #mus-list{font-size: 28px;}#about{font-size:28px ;}
+    .muisc{width: 100%;}
     .i-1{left: 52%;}
     .row{max-height: 350px;}
     .info1{height: 300px;}
     .my-info{margin-left: 25px;}
+    .name{top: 68%; font-size: 11px;}
 @media screen  and (max-width:400px)
 {   body{
     overflow-x: hidden;
@@ -60,7 +62,9 @@
  .player{max-width: 100%;}
     .img{width: 200px; height: 300px; object-fit: cover;}
     .img>img{width: 200px;}
-    .muisc{width: 80%; top: 40%; height: 100%;}
+    .muisc{width: 100%; top: 40%; height: 100%;}
+    .name{font-size: 13px;}
     #about{left: 70%;}
+    #prev{font-size: 35px;}#play{font-size: 45px;}#next{font-size: 35px;}
 }
 }    
