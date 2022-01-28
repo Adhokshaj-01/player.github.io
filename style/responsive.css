@@ -63,8 +63,8 @@
     .img{width: 200px; height: 300px; object-fit: cover;}
     .img>img{width: 200px;}
     .muisc{width: 100%; top: 40%; height: 100%;}
-    .name{font-size: 13px;}
-    #about{left: 70%;}
+    .name{font-size: 12px;}
+    #about{left: 85%;}
     #prev{font-size: 35px;}#play{font-size: 45px;}#next{font-size: 35px;}
 }
-}    
+}     
