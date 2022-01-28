@@ -4,7 +4,7 @@ AOS.init({
             once: false,
 
 });
-//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 let muiscIndex = 0;
 
 window.addEventListener("load" , ()=> {
