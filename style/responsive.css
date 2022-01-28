@@ -1,0 +1,66 @@
+@media screen  and (max-width:650px){
+    .main{
+        min-width: 100%;
+    }
+    
+}
+@media screen  and (max-width:1050px){
+    
+    .brand{border-right: none;}
+.title{
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+    }
+.info{
+    top:25%;
+}
+#radio{ 
+    position: fixed;
+     font-size: 100px;
+    left: 38%;}
+.sub-info{
+    position: fixed;
+    font-size: 80px;
+    left: 2%;
+    top: 50%;}
+  #ex{margin-top: 30px;
+  position: fixed;
+   left: 40%;}
+}
+
+@media screen  and (max-width:960px){
+    .nav{position: fixed;}
+    .muisc{width: 90%; top: 40%; height: 100%; border-top: none;}
+    .img{width: auto; height: 300px; object-fit: cover;}
+    .progress{top: 70%; width: 70%; left: 10%;}
+    .name{top: 65%; font-size: 12px ;}
+    .icon{top: 75%; height: 60px;}
+    #about{left: 80%; color: rgb(224, 14, 49);}
+    
+    
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .progress{left: 15%;}
+   /* #end{left: 28% !important;}*/
+    .player{max-width: 100%;}
+    #prev{font-size: 30px;}#play{font-size: 40px;}#next{font-size: 30px;}
+    #mus-list{font-size: 28px;}#about{font-size:28px ;}
+    .i-1{left: 52%;}
+    .row{max-height: 350px;}
+    .info1{height: 300px;}
+    .my-info{margin-left: 25px;}
+@media screen  and (max-width:400px)
+{   body{
+    overflow-x: hidden;
+}
+ .player{max-width: 100%;}
+    .img{width: 200px; height: 300px; object-fit: cover;}
+    .img>img{width: 200px;}
+    .muisc{width: 80%; top: 40%; height: 100%;}
+    #about{left: 70%;}
+}
+}    

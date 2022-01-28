@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*:root{
+    border:var(rgb(236, 61, 90));
+}*/
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    background-image: url(music.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color:  rgba(117, 115, 115, 0.308);
+    z-index: 80;
+}
+.brand{
+    display: flex;
+    width: 100%;
+   text-align: center;
+}
+.title{
+    position: relative;
+    width: 100%;
+    top: 20%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.info{
+   /* border: 1px solid red;*/
+   background-attachment: fixed;
+    position: relative;
+    top: 30%;
+    height: 400px;
+    text-align: center;
+}
+#radio{
+    position: fixed;
+    left: 45%;
+    top:30%;
+    color: turquoise;
+    font-size: 150px;}
+
+    
+.sub-info{
+    position: fixed;
+    left: 30%;
+    top:60%;
+    font-size: 100px;
+    font-weight: 200;
+    
+}
+#ex{
+    position: fixed;
+    left: 47%;
+    top:80%;
+}
+.player{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:#121212;
+    z-index: 99;
+    
+}
+.muisc{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    /*border: 1px solid grey ;*/
+    border-top: 1px solid rgb(236, 61, 90);
+    border-bottom: 1px solid rgb(236, 61, 90);
+    background: #2525252d;
+    height:90vh;
+    width: 65%;
+    overflow: hidden !important;
+    }
+.img{
+    display: flex;
+    position: absolute;
+    left: 50%;top: 38%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+    box-shadow: -1px 17px 5px -5px rgba(130,119,119,0.61);
+
+}
+@keyframes play {
+    0%{ box-shadow: -1px 17px 5px -5px rgba(187, 66, 224, 0.822);}
+    25%{ box-shadow: -1px 17px 5px -5px rgba(57, 235, 116, 0.89);}
+    50%{ box-shadow: -1px 17px 5px -5px rgba(62, 242, 255, 0.61);}
+    100%{ box-shadow: -1px 17px 5px -5px rgba(236, 43, 133, 0.753);}
+    
+}
+.name{
+    position: absolute;
+    left: 50%;top: 75%;
+    transform: translate(-50%,-50%);
+}
+.progress{
+    position: absolute;
+    display: flex;
+    left: 28%;top: 80%;
+    background: rgb(152, 165, 165);
+    width: 45%;
+    height: 3px;
+    transition: all 0.3s;
+}
+.progress:hover{cursor: pointer;}
+.half-prog{
+    position: relative;
+    height: inherit;
+    width: 0.5%;
+    background: rgb(255, 0, 43);
+    border-radius:30px;
+    opacity: 0.9;
+}
+.half-prog::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-49%);
+    right:-5px;
+    height: 10px;
+    width: 10px;
+    background: inherit;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity all 0.2s;
+}
+.half-prog:hover{cursor: pointer; opacity: 1;}
+/*.timer
+{
+    position: relative;
+    left: 50%;top: 80%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 80%;
+}
+#start{color:whitesmoke;
+    position: absolute;
+    left: 25%;
+   }
+#end{color:whitesmoke;
+float: right;}   */ 
+.icon
+{
+  position: absolute;
+  display: flex;
+  left: 5%;top: 87%;
+  height: 40px;
+  width: 90%;
+  text-align: center;  
+}
+.i-1{
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%,-50%);
+}
+#prev{font-size: 35px; cursor: pointer; transition: 0.3s all;}
+#play{font-size: 50px; cursor: pointer;transition: 0.3s all;}
+#next{font-size:35px ; cursor: pointer;transition: 0.3s all;}
+#prev:hover{color: cyan;}#play:hover{color: rgb(236, 61, 90);}#next:hover{color: cyan;}
+
+#about{
+    color: rgb(248, 0, 174);font-size: 35px;position: relative;left: 90%;
+    cursor: pointer;transition: ease 0.2s;
+}
+#about:hover{margin-top: -10px; font-size: 38px;}
+#mus-list{font-size: 35px;color: turquoise; cursor: pointer;}
+.list-songs{
+display: block;
+ position: absolute;
+ left: 0%;top: 100%;
+  background: #121212;
+ width: 100%;
+ transition: all 0.8s;
+ bottom: 30%;
+ opacity: 0;
+ 
+ 
+
+}
+.list-of-sn{
+    position: relative;
+    list-style: none;
+    /*bottom: 55%;*/
+    line-height: 40px;
+    }
+    .row{
+        background: #121212;
+        max-height: 200px;
+        position: relative;
+        overflow: auto;
+        
+    }
+    .row::-webkit-scrollbar{
+        width: 0;
+    }
+    .list-duration{
+        float: right !important;
+        margin-top: -40px;
+        margin-right: 100px;
+        font-weight: 100;
+        color: rgb(177, 174, 174) !important;
+    }
+    .list-of-sn>li{
+        color: white;
+        font-weight: bold;
+        padding-left: 30px;
+        background: #615f5f5d;
+        border-bottom: 1px solid rgb(58, 57, 57);
+        cursor: pointer;
+        transition: all 0.2s;
+    } 
+    .list-of-sn>li:hover{background-color: rgb(54, 54, 54);}
+    .list-of-sn>li>p{
+        color: rgb(99, 99, 99);
+        font-weight: bold;
+    }
+.info1{
+    display: block;
+   /* border-top: 1px solid rgb(236, 61, 90);*/
+    width: 100%;
+    position: absolute;
+    background: #464646;
+    top: 100%;
+    height: 165px;
+    overflow: auto;
+    transition: all 0.8s;
+    opacity: 0.3;
+    }
+    .info1::-webkit-scrollbar{
+        width: 0;
+    }
+    .my-info{
+        color: white ;
+        margin-left: 40px;
+        font-size: 15px ;
+        font-weight: bold;
+       
+    }
+    .my-info-2>a{
+        text-decoration: none;
+        color: white;
+        margin-left: 40px;
+        letter-spacing: 40px;
+        font-size: 30px ;
+        font-weight: bold;
+        cursor: pointer;
+       }
+       #twt{transition: all 0.2s;}#link{transition: all 0.2s;}#gi{transition: all 0.2s;}
+       #twt:hover{color: cyan;}
+       #link:hover{color:#0B5FBB;}
+       #git:hover{color: rgb(131, 64, 194);}

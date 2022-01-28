@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Muisc Plyer : Adhokshaj</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="nav">
+            <div class="brand" data-aos="fade-down">
+                <span class="title"> <i class="fas fa-podcast" style="color: rgb(212, 49, 49);"></i> Music Player</span>
+            </div>
+        </nav>
+        <div class="info"><i class="material-icons" id="radio">
+                radio
+            </i></br>
+            <h2 style="color: white;" class="sub-info" data-aos="fade-up">Scroll Down </h2>
+            <a href="#player"><i class="material-icons" style="color: wheat;
+                  font-size: 80px;
+                  font-weight: 200;
+                  cursor: pointer;" data-aos="fade-down" id="ex">
+                    expand_more
+                </i></a>
+
+        </div>
+    </div>
+    <div class="player" id="player">
+        <div class="muisc">
+            <div>
+                <img class="img" src="">
+            </div>
+            <div>
+                <h4 style="color: rgb(255, 255, 255);" class="name">No lie - Sean Paul, Dua Lipa</h4>
+            </div>
+            <div class="progress">
+                <div class="half-prog"></div>
+                <span id="start" style="color:whitesmoke;
+                              position: absolute;
+                              left: -4%;
+                              top: 1%;">0:00</span>
+                <span id="end" style="color:whitesmoke;
+                            position: absolute;
+                              left: 94%;
+                              top: 1%;">3:00</span>
+            </div>
+            <audio class="main-audio" src="songs/tmc.mp3"></audio>
+            <div class="icon">
+                <i class="material-icons" id="mus-list" title="click me">
+                    queue_music
+                </i>
+                <span class="i-1">
+
+
+                    <i class="material-icons" id="prev" title="previous song">
+                        skip_previous
+                    </i>
+                    <i class="material-icons" id="play">
+                        play_circle_filled
+                    </i>
+                    <i class="material-icons" id="next" title="Next Song">
+                        skip_next
+                    </i>
+                </span>
+                <i class="material-icons" id="about" title="click me">
+                    expand_less
+                </i>
+            </div>
+            <div class="list-songs">
+                <span class="nm-lis" style="color: whitesmoke;
+             font-size: 20px;">
+                    <i class="material-icons">
+                        playlist_play
+
+                    </i> Songs
+                    <i class="material-icons" style="float: right;
+                  margin-right: 30px;
+                  font-size: 30px;
+                  cursor: pointer;" id="cls-list">
+                        close
+
+                    </i>
+                </span>
+                <div class="row">
+                    <ul class="list-of-sn">
+                        <li id="ones">No Lie
+                            <p>Sean Paul, Dua Lipa</p>
+                            <p class="list-duration">3:43</p>
+                        </li>
+                        <li id="twos">Take me to Church
+                            <p>Hoizer</p>
+                            <p class="list-duration">4:10</p>
+                        </li>
+                        <li id="threes">Enemy
+                            <p>Imagine Dragons x J.I.D</p>
+                            <p class="list-duration">2:53</p>
+                        </li>
+                        <li id="fours">That's Amore
+                            <p>Dean Martin</p>
+                            <p class="list-duration">3:07</p>
+                        </li>
+                        <li id="fives">In the Ghetto
+                            <p>Elvis Presly</p>
+                            <p class="list-duration">2:58</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="info1">
+                <p>
+                <h1 style="color: rgb(236, 61, 90);
+                   margin-left: 20px;">About <i class="material-icons" style="float: right;
+                  margin-right: 30px;
+                  font-size: 30px;
+                  cursor: pointer;" id="cls-list-info">
+                        close
+
+                    </i></h1>
+                <span class="my-info"> Design and developed by Adhokshaj </span></p></br>
+                <h1 style="color: rgb(236, 61, 90);
+                   margin-left: 20px;">Social's</h1>
+                <span class="my-info-2"> <a href="https://twitter.com/H_Adhokshaj"  target="_blank"id="twt"><i
+                            class="fab fa-twitter"></i></a> <a
+                        href="https://in.linkedin.com/in/adhokshaj-hartalkar" id="link" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a> <a href="https://github.com/Adhokshaj-01" target="_blank"><i class="fab fa-github"
+                            id="git"></i></a></span></p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script/app.js" async defer></script>
+    <script src="script/elements.js"></script>
+    <script src="script/allSongs.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
