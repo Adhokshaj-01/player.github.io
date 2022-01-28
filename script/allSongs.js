@@ -10,7 +10,7 @@ let allSongs = [
         src:"tmc"
     },
     {
-        name :"Enemy - Imagine Dragons x J.I.D",
+        name :"Enemy - Imagine Dragons",
         img :"enemy",
         src:"enemy"
     },
