@@ -130,6 +130,7 @@ html{
     background: rgb(255, 0, 43);
     border-radius:30px;
     opacity: 0.9;
+    transition: ease-in 0.4s;
 }
 .half-prog::before{
     content: "";
