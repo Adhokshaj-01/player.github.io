@@ -272,3 +272,48 @@ display: block;
        #twt:hover{color: cyan;}
        #link:hover{color:#0B5FBB;}
        #git:hover{color: rgb(131, 64, 194);}
+/*--loader*/
+       .loader{
+           position: fixed;
+           z-index: 999999;
+           background-color: #121212;
+           width: 100vw;
+           height: 100vh;
+       }
+       .load{
+           position: absolute;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 0 solid transparent;
+           left: 50%;top: 48%;
+           transform: translate(-50%,-50%);
+       }
+       .load::before,.load::after{
+           content: "";
+           height: inherit;
+           width: inherit;
+           border: 0.6em solid rgb(236, 61, 90);
+           border-radius:50% ;
+           position: absolute;
+           top: 0;
+           left: 0;
+           animation: load infinite 2s;
+           opacity: 0;
+
+       }
+       .load::before{animation-delay: .6s;}
+       @keyframes load {
+           0%{
+               transform: scale(0);
+               opacity: 0;
+           }
+           50%{opacity: 1;
+            }
+            
+           100%{
+               transform: scale(1);
+               opacity: 0;
+           }
+           
+       }
