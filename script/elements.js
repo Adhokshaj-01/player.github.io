@@ -14,3 +14,4 @@ const prevSong=document.getElementById("prev");
 const nextSong=document.getElementById("next");
 const progressarea=document.querySelector('.progress');
 const progressbar=document.querySelector('.half-prog');
+const load=document.querySelector('.loader');
