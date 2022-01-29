@@ -9,6 +9,7 @@ let muiscIndex = 0;
 
 window.addEventListener("load" , ()=> {
     onload(muiscIndex);
+             load.style.display="none";
 })
 
 function onload(indexnum){
