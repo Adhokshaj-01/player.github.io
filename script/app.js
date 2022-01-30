@@ -1,15 +1,15 @@
-//ANimation--on-scroll
-AOS.init({
-            duration : 2000,
-            once: false,
-
-});
 document.addEventListener('contextmenu', event => event.preventDefault());
 let muiscIndex = 0;
 
 window.addEventListener("load" , ()=> {
     onload(muiscIndex);
              load.style.display="none";
+            //ANimation--on-scroll
+AOS.init({
+            duration : 2000,
+            once: false,
+
+});
 })
 
 function onload(indexnum){
