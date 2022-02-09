@@ -1,3 +1,13 @@
+window.addEventListener("mousemove" , (e)=>{
+    mousemagic();
+
+    function mousemagic() {
+        mouse.style.top = e.pageY + "px";
+        mouse.style.left = e.pageX + "px";
+        mouse2.style.top = e.pageY + "px";
+        mouse2.style.left = e.pageX + "px";
+    }
+})
 document.addEventListener('contextmenu', event => event.preventDefault());
 let muiscIndex = 0;
 
