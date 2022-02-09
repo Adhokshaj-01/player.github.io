@@ -8,7 +8,7 @@ window.addEventListener("mousemove" , (e)=>{
         mouse2.style.left = e.pageX + "px";
     }
 })
-//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 let muiscIndex = 0;
 
 window.addEventListener("load" , ()=> {
