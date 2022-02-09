@@ -55,6 +55,7 @@
     .info1{height: 380px;}
     .my-info{margin-left: 25px;}
     .name{top: 68%; font-size: 11px;}
+     .cursor,.cursor2{display: none;}
 @media screen  and (max-width:400px)
 {   body{
     overflow-x: hidden;
