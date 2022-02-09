@@ -10,6 +10,36 @@
 html{
     scroll-behavior: smooth;
 }
+/*mouse*/
+.cursor{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(240, 183, 209);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: ease .1s;
+    z-index: 99999;
+    
+}
+.cursor2{
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: rgb(255, 0, 119);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: ease .18s;
+    z-index: 99999;
+
+}
+/*--mouse*/
 .main{
     background-image: url(music.jpg);
     background-size: cover;
