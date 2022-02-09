@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    cursor: none;
 }
 /*:root{
     border:var(rgb(236, 61, 90));
